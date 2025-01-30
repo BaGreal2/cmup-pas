@@ -374,7 +374,6 @@ var
   PathToMusicDirectory, PathToCmusPlaylists, PlaylistName: String;
   Directories, Files, PlaylistLines: TStringList;
   AudioFiles: Array of TAudioFile;
-  CurrentFile: TextFile;
 begin
   if ParamCount < 2 then
   begin
