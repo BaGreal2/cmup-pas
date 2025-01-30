@@ -177,7 +177,7 @@ begin
     Tree.Add(Directory);
     InnerDirectories.Free;
     Directories.Free;
-    exit;
+    Exit;
   end;
 
   for i := 0 to Directories.Count - 1 do
@@ -210,7 +210,7 @@ begin
   else
   begin
     FirstPartLength := Length(FirstPart);
-    Rest := copy(Path, FirstPartLength + 2, Length(Path) - FirstPartLength);
+    Rest := Copy(Path, FirstPartLength + 2, Length(Path) - FirstPartLength);
     RestParts := SplitString(Rest, '/');
     FirstOfRest := RestParts[0];
     if FirstOfRest[Length(FirstOfRest)] = '$' then
