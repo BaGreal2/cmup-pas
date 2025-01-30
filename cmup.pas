@@ -351,7 +351,7 @@ begin
   else
   begin
     FirstPartLength := Length(FirstPart);
-    Rest := copy(Path, FirstPartLength + 2, Length(Path) - FirstPartLength);
+    Rest := Copy(Path, FirstPartLength + 2, Length(Path) - FirstPartLength);
     RestParts := SplitString(Rest, '/');
     FirstOfRest := RestParts[0];
     if FirstOfRest[Length(FirstOfRest)] = '$' then
